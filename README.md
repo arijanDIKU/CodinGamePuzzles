@@ -1,2 +1,2 @@
 # CodinGamePuzzles
-Attempt at F# solutions to CodinGame puzzles 
+Attempts at F# solutions to CodinGame puzzles 
