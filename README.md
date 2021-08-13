@@ -1,2 +1,2 @@
 # CodinGamePuzzles
-Attempts at F# solutions to [CodinGame](https://www.codingame.com/start) puzzles 
+Attempts at F# solutions to [CodinGame](https://www.codingame.com/training) puzzles 
