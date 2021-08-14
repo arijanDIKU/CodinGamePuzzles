@@ -1,2 +1,3 @@
 # CodinGamePuzzles
-Attempts at F# solutions to [CodinGame](https://www.codingame.com/training) puzzles 
+Attempts at implementing functional F# solutions to [CodinGame](https://www.codingame.com/training) puzzles 
+
