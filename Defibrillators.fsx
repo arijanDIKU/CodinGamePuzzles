@@ -1,4 +1,4 @@
-//Level easy
+//Level: easy
 
 
 open System
