@@ -56,7 +56,9 @@ module Evaluation =
 
 let solution (spreadsheet : Cell list) : Cell list =
     let memStack = [0..List.length spreadsheet - 1]
+    
     let rec traverse (spreadsheet : Cell list) (memStack : int list) : Cell list =
+        printfn "%A %A" spreadsheet memStack
         match memStack with 
         | [] -> spreadsheet 
         | i::indexes -> match Evaluation.evalCell spreadsheet.[i] with 
@@ -68,7 +70,7 @@ let solution (spreadsheet : Cell list) : Cell list =
                                                         let spreadsheet'' = traverse spreadsheet' [m]
                                                         let refRes2 : Argument = match spreadsheet''.[m] with | Computed v2 -> Value v2 | _ -> Value -1
 
-                                                        let spreadsheetDeref = (spreadsheet'.[0..i-1]@[NonComputed (refRes1, opn, refRes2)]@spreadsheet'.[i+1..])
+                                                        let spreadsheetDeref = (spreadsheet''.[0..i-1]@[NonComputed (refRes1, opn, refRes2)]@spreadsheet''.[i+1..])
 
                                                         traverse spreadsheetDeref memStack //sent it back again
 
